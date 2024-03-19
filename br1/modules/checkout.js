@@ -1,0 +1,49 @@
+import mongoose from "mongoose";
+const Schema = mongoose.Schema
+const checkoutSchema = new Schema({
+    firstName:{
+        type:String,
+        required:true
+    },
+    lastName:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    address:{
+        type:String,
+        required:true
+    },
+    address2:{
+        type:String,
+        required:true
+    },
+    TotalPrice:{
+        type:String,
+        required:true
+    },
+    zip:{
+        type:String,
+        required:true
+    },
+    nameoncard:{
+        type:String,
+        required:true
+    },
+    creditcardnumber:{
+        type:String,
+        required:true
+    },
+    expiration:{
+        type:String,
+        required:true
+    },
+    cvv:{
+        type:String,
+        required:true
+    },
+})
+export default mongoose.model("checkout",checkoutSchema)
